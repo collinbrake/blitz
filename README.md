@@ -1,6 +1,6 @@
 # image-plot
 
-The goal of this repository is to streamline the task of ploting an image as a
+The goal of this repository is to streamline the task of plotting an image as a
 surface in python.
 
 ## Functionality
