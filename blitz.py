@@ -2,7 +2,6 @@ import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
 from mpl_toolkits import mplot3d
-%matplotlib inline
 
 def plot(img_file):
     # Read the image
