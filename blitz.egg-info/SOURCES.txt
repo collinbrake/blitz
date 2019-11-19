@@ -1,0 +1,6 @@
+README.md
+setup.py
+blitz.egg-info/PKG-INFO
+blitz.egg-info/SOURCES.txt
+blitz.egg-info/dependency_links.txt
+blitz.egg-info/top_level.txt

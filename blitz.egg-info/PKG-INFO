@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: blitz
+Version: 0.0.1
+Summary: A package to plot images as surfaces
+Home-page: https://github.com/collinbrake/blitz
+Author: Collin Brake
+Author-email: collin@bec-systems.com
+License: UNKNOWN
+Description: # blitz
+        
+        The goal of this repository is to streamline the task of plotting an image as a
+        surface in python.
+        
+        ## Functionality
+        
+        This tool is designed to be used in Jupyter Notebooks. The function `plot` in the `image-plot` module takes an image file name in the current directory, reads the image with OpenCV, and plots it as a surface in 3D space using the `mplot3D` toolkit from `mpl_toolkits`.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
