@@ -1,4 +1,4 @@
-# image-plot
+# blitz
 
 The goal of this repository is to streamline the task of plotting an image as a
 surface in python.
