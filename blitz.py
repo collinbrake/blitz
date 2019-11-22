@@ -3,9 +3,13 @@ import cv2 as cv
 from matplotlib import pyplot as plt
 from mpl_toolkits import mplot3d
 
-def plot(img_file):
+def plot(img_file, scale=1):
     # Read the image
     img = cv.imread(img_file, 0)
+
+    # Scale the image as specified
+    img = cv.resize(img, None, fx=scale, fy=scale,
+                    interpolation=cv.INTER_CUBIC)
 
     # Define the axis based on the image size
     xlen, ylen = img.shape
