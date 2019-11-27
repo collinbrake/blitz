@@ -3,16 +3,14 @@ import cv2 as cv
 from matplotlib import pyplot as plt
 from mpl_toolkits import mplot3d
 
-def plot(img_file, scale=1):
-    # Read the image
-    img = cv.imread(img_file, 0)
+def plot(nparray, scale=1, title="Plot"):
 
     # Scale the image as specified
-    img = cv.resize(img, None, fx=scale, fy=scale,
+    nparray = cv.resize(nparray, None, fx=scale, fy=scale,
                     interpolation=cv.INTER_CUBIC)
 
     # Define the axis based on the image size
-    xlen, ylen = img.shape
+    xlen, ylen = nparray.shape
     x = np.linspace(0, xlen, xlen)
     y = np.linspace(0, ylen, ylen)
     X, Y = np.meshgrid(y, x)
@@ -20,6 +18,6 @@ def plot(img_file, scale=1):
     # Plot the image
     fig = plt.figure()
     ax = plt.axes(projection='3d')
-    ax.plot_surface(X, Y, img, rstride=1, cstride=1,
+    ax.plot_surface(X, Y, nparray, rstride=1, cstride=1,
                     cmap='viridis', edgecolor='none')
-    ax.set_title(img_file)
+    ax.set_title(title)
