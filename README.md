@@ -5,4 +5,9 @@ surface in python.
 
 ## Functionality
 
-This tool is designed to be used in Jupyter Notebooks. The function `plot` in the `blitz` module takes an image file name in the current directory, reads the image with OpenCV, and plots it as a surface in 3D space using the `mplot3D` toolkit from `mpl_toolkits`.
+The function `plot` in the `blitz` module takes an image and plots it as a surface in 3D space using the `mplot3D` toolkit from `mpl_toolkits`.
+
+### Todo
+
+- Increase code efficiency and speed
+- Publish `blitz` with [PyPi](https://packaging.python.org/tutorials/packaging-projects/)
