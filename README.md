@@ -9,5 +9,6 @@ The function `plot` in the `blitz` module takes an image and plots it as a surfa
 
 ### Todo
 
+- Add an example plot in Jupyter Notebooks
 - Increase code efficiency and speed
 - Publish `blitz` with [PyPi](https://packaging.python.org/tutorials/packaging-projects/)
